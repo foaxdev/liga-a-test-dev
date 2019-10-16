@@ -11,6 +11,10 @@
   justify-content: space-between;
 }
 
+.header__title-wrap {
+  display: none;
+}
+
 .header__menu {
   display: none;
 }
@@ -57,5 +61,52 @@
 
   &:first-child {
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding: 25px;
+  }
+
+  .header__logo {
+    margin-right: 15px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .header__top-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__title-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__title-name {
+    margin: 0;
+
+    font-size: 25px;
+    line-height: 29px;
+    color: $white;
+  }
+
+  .header__title {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: $grey;
+  }
+
+  .header__link {
+    margin-left: 35px;
+
+    &:first-child {
+      margin: 0;
+    }
   }
 }

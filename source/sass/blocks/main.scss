@@ -14,3 +14,13 @@
       background-repeat: no-repeat;
     }
 }
+
+@media (min-width: $tablet-width) {
+  .main {
+    &::before {
+        bottom: 170px;
+        right: 0;
+        width: 475px;
+      }
+  }
+}

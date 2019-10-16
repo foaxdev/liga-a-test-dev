@@ -72,3 +72,63 @@
     background-color: $white;
   }
 }
+
+.introduction__link--long {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .introduction {
+    padding: 340px 25px 160px 25px;
+    margin-top: -105px;
+
+    background-image: url("../img/background-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-motablet@2x.png");
+    }
+
+    &::before {
+      top: 120px;
+
+      width: 260px;
+      height: 340px;
+
+      background-image: url("../img/layout-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/layout-tablet@2x.png");
+      }
+    }
+  }
+
+  .introduction__tagline {
+    max-width: 470px;
+    margin-left: 70px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .introduction__header {
+    margin: 30px 0 40px 115px;
+    max-width: 355px;
+
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      top: 18px;
+    }
+  }
+
+  .introduction__link--long {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-left: 70px;
+  }
+
+  .introduction__link--short {
+    display: none;
+  }
+}

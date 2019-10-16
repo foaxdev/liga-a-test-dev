@@ -4,3 +4,9 @@
 
   padding: 35px 17px 60px 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding: 55px 25px;
+  }
+}
