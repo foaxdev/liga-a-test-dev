@@ -28,6 +28,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/layout-mobile@2x.png");
+      background-size: 295px 220px;
     }
   }
 }
@@ -102,6 +103,7 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/layout-tablet@2x.png");
+        background-size: 260px 340px;
       }
     }
   }
@@ -159,6 +161,7 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/layout-desktop@2x.png");
+        background-size: 705px 515px;
       }
     }
   }

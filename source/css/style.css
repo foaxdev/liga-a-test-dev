@@ -473,7 +473,8 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .introduction::before {
-        background-image: url("../img/layout-mobile@2x.png"); } }
+        background-image: url("../img/layout-mobile@2x.png");
+        background-size: 295px 220px; } }
 
 .introduction__tagline {
   position: relative;
@@ -529,7 +530,8 @@ input[type="radio"].visually-hidden {
       background-image: url("../img/layout-tablet@1x.png"); } }
     @media (min-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 750px) and (min-resolution: 144dpi), (min-width: 750px) and (min-resolution: 1.5dppx) {
       .introduction::before {
-        background-image: url("../img/layout-tablet@2x.png"); } }
+        background-image: url("../img/layout-tablet@2x.png");
+        background-size: 260px 340px; } }
 
 @media (min-width: 750px) {
   .introduction__tagline {
@@ -569,7 +571,8 @@ input[type="radio"].visually-hidden {
       background-image: url("../img/layout-desktop@1x.png"); } }
     @media (min-width: 1565px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1565px) and (min-resolution: 144dpi), (min-width: 1565px) and (min-resolution: 1.5dppx) {
       .introduction::before {
-        background-image: url("../img/layout-desktop@2x.png"); } }
+        background-image: url("../img/layout-desktop@2x.png");
+        background-size: 705px 515px; } }
 
 @media (min-width: 1565px) {
   .introduction__wrap {
@@ -863,7 +866,8 @@ input[type="radio"].visually-hidden {
       background-repeat: no-repeat; } }
     @media (min-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 750px) and (min-resolution: 144dpi), (min-width: 750px) and (min-resolution: 1.5dppx) {
       .about::before {
-        background-image: url("../img/year-tablet@2x.png"); } }
+        background-image: url("../img/year-tablet@2x.png");
+        background-size: 245px 365px; } }
 
 @media (min-width: 750px) {
   .about__header {
