@@ -1,0 +1,74 @@
+.introduction {
+  position: relative;
+
+  padding: 320px 15px 70px 15px;
+  margin-top: -100px;
+
+  background-image: url("../img/background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-mobile@2x.png");
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 120px;
+    right: 0;
+    z-index: 1;
+
+    width: 295px;
+    height: 220px;
+
+    background-image: url("../img/layout-mobile@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/layout-mobile@2x.png");
+    }
+  }
+}
+
+.introduction__tagline {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+  max-width: 270px;
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.introduction__header {
+  position: relative;
+
+  display: block;
+  margin: 30px 0 40px 40px;
+  max-width: 245px;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: $white;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: -40px;
+    top: 15px;
+
+    width: 33px;
+    height: 2px;
+
+    background-color: $white;
+  }
+}

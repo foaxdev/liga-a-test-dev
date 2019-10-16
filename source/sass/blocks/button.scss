@@ -1,0 +1,44 @@
+.button {
+  display: block;
+  padding: 15px 10px;
+  max-width: 287px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+
+  border: 1px solid $blue;
+  background-color: $blue;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+
+    background-color: $white;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &--outline {
+    color: $blue;
+
+    background-color: $white;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      color: $white;
+
+      background-color: $blue;
+    }
+  }
+}

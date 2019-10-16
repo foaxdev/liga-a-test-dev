@@ -1,0 +1,16 @@
+.main {
+  position: relative;
+
+  &::before {
+      position: absolute;
+      content: "";
+      bottom: 290px;
+      right: 0;
+
+      width: 375px;
+      height: 635px;
+
+      background-image: url("../img/polygon.svg");
+      background-repeat: no-repeat;
+    }
+}
