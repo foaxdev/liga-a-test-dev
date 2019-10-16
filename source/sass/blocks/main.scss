@@ -24,3 +24,15 @@
       }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main {
+      background-image: url("../img/main-background.svg");
+      background-repeat: no-repeat;
+      background-position: bottom center;
+
+      &::before {
+          display: none;
+        }
+    }
+}

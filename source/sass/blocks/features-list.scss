@@ -84,3 +84,17 @@
     line-height: 34px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features-list {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  .features-list__item {
+    width: 570px;
+    min-height: 300px;
+
+    border-left: 3px solid $blue;
+  }
+}
