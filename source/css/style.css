@@ -421,6 +421,34 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px); }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px); }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
 .button {
   display: inline-block;
   vertical-align: middle;
@@ -449,6 +477,10 @@ input[type="radio"].visually-hidden {
     .button--outline:hover, .button--outline:focus {
       color: #FFFFFF;
       background-color: #00B2FF; }
+  .button--blue-outline {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    background-color: #00B2FF; }
 
 .introduction {
   position: relative;
@@ -930,3 +962,248 @@ input[type="radio"].visually-hidden {
     background-position: bottom center; }
     .main::before {
       display: none; } }
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 490px;
+  min-height: 605px;
+  margin-top: -300px;
+  margin-left: -245px;
+  padding: 35px 40px;
+  background-color: #00B2FF; }
+  .modal--show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: bounce 0.6s;
+            animation: bounce 0.6s; }
+
+.modal__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.modal__header {
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: #FFFFFF; }
+
+.modal__note {
+  margin: 0 0 30px 0;
+  max-width: 380px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF; }
+
+.modal__close-button {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+  .modal__close-button:hover, .modal__close-button:focus, .modal__close-button:active {
+    opacity: 0.6;
+    outline: none; }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.form__input {
+  width: 410px;
+  height: 50px;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  border: none; }
+  .form__input::-webkit-input-placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__input::-moz-placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__input:-ms-input-placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__input::-ms-input-placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__input::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__input:hover, .form__input:focus {
+    color: #00B2FF;
+    background: #FFFFFF;
+    outline: none; }
+    .form__input:hover::-webkit-input-placeholder, .form__input:focus::-webkit-input-placeholder {
+      color: #00B2FF; }
+    .form__input:hover::-moz-placeholder, .form__input:focus::-moz-placeholder {
+      color: #00B2FF; }
+    .form__input:hover:-ms-input-placeholder, .form__input:focus:-ms-input-placeholder {
+      color: #00B2FF; }
+    .form__input:hover::-ms-input-placeholder, .form__input:focus::-ms-input-placeholder {
+      color: #00B2FF; }
+    .form__input:hover::placeholder, .form__input:focus::placeholder {
+      color: #00B2FF; }
+
+.form__textarea {
+  width: 410px;
+  height: 105px;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none; }
+  .form__textarea::-webkit-input-placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__textarea::-moz-placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__textarea:-ms-input-placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__textarea::-ms-input-placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__textarea::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .form__textarea:hover, .form__textarea:focus {
+    color: #00B2FF;
+    background: #FFFFFF;
+    outline: none; }
+    .form__textarea:hover::-webkit-input-placeholder, .form__textarea:focus::-webkit-input-placeholder {
+      color: #00B2FF; }
+    .form__textarea:hover::-moz-placeholder, .form__textarea:focus::-moz-placeholder {
+      color: #00B2FF; }
+    .form__textarea:hover:-ms-input-placeholder, .form__textarea:focus:-ms-input-placeholder {
+      color: #00B2FF; }
+    .form__textarea:hover::-ms-input-placeholder, .form__textarea:focus::-ms-input-placeholder {
+      color: #00B2FF; }
+    .form__textarea:hover::placeholder, .form__textarea:focus::placeholder {
+      color: #00B2FF; }
+
+.form__submit {
+  margin-bottom: 35px; }
+
+.form__label {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 330px;
+  padding-left: 45px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.8; }
+
+.form__checkbox:hover, .form__checkbox:focus, .form__checkbox:active {
+  outline: none; }
+
+.form__checkbox:hover span::before,
+.form__checkbox:focus span::before {
+  opacity: 0.6; }
+
+.form__checkbox-indicator {
+  position: relative;
+  cursor: pointer; }
+  .form__checkbox-indicator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FFFFFF; }
+  .form__checkbox-indicator--selected::before {
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px 7px; }
+  .form__checkbox-indicator:hover, .form__checkbox-indicator:focus, .form__checkbox-indicator:active {
+    outline: none; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .overlay--show {
+    display: block; }

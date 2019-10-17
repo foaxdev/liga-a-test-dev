@@ -1,0 +1,142 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  width: 410px;
+  height: 50px;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+
+  &::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $blue;
+
+    background: $white;
+    outline: none;
+
+    &::placeholder {
+      color: $blue;
+    }
+  }
+}
+
+.form__textarea {
+  width: 410px;
+  height: 105px;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+
+  &::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $blue;
+
+    background: $white;
+    outline: none;
+
+    &::placeholder {
+      color: $blue;
+    }
+  }
+}
+
+.form__submit {
+  margin-bottom: 35px;
+}
+
+.form__label {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 330px;
+  padding-left: 45px;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+
+  opacity: 0.8;
+}
+
+.form__checkbox {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &:hover span::before,
+  &:focus span::before {
+    opacity: 0.6;
+  }
+}
+
+.form__checkbox-indicator {
+  position: relative;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid $white;
+  }
+
+  &--selected {
+    &::before {
+      background-image: url("../img/tick.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 9px 7px;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}

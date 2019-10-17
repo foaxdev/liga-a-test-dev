@@ -41,4 +41,11 @@
       background-color: $blue;
     }
   }
+
+  &--blue-outline {
+    color: $white;
+
+    border-color: $white;
+    background-color: $blue;
+  }
 }

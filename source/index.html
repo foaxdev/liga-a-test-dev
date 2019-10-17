@@ -129,5 +129,29 @@
       <a class="about__link button button--outline" href="#">Подробнее</a>
     </section>
   </main>
+
+  <section class="modal">
+    <div class="modal__wrap">
+      <h2 class="modal__header">Закажите звонок</h2>
+      <button class="modal__close-button" type="button">Закрыть форму</button>
+      <p class="modal__note">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="form" action="#" method="post" autocomplete="off">
+        <input class="form__input" type="text" aria-label="Введите ваше имя" name="name" placeholder="Имя" required>
+        <input class="form__input" type="tel" aria-label="Введите ваш телефон" name="phone" placeholder="Телефон" required>
+        <textarea class="form__textarea" aria-label="Введите ваш вопрос" name="question" placeholder="Ваш вопрос" required></textarea>
+        <button class="form__submit button button--blue-outline" type="submit">Отправить</button>
+        <div class="form__checkbox" role="checkbox" aria-checked="true" tabindex="0">
+          <span class="form__checkbox-indicator form__checkbox-indicator--selected"></span>
+          <label class="form__label form__label--agreement" for="agreement">Я согласен на обработку  персональных данных</label>
+          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement" tabindex="-1" checked required>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div id="overlay" class="overlay"></div>
+
+  <script src="js/constants.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>

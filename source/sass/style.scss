@@ -3,6 +3,7 @@
 @import "mixins";
 @import "fonts";
 @import "global";
+@import "animation";
 @import "blocks/button";
 @import "blocks/introduction";
 @import "blocks/header";
@@ -10,3 +11,6 @@
 @import "blocks/about";
 @import "blocks/features";
 @import "blocks/main";
+@import "blocks/modal";
+@import "blocks/form";
+@import "blocks/overlay";
